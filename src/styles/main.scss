@@ -1,0 +1,49 @@
+@use 'hero';
+@use 'variaveis';
+@use 'header';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/PoppinsLight-l4Zw.otf);
+}
+
+@font-face{
+    font-family: Poppins;
+    src: url(/assets/fonts/PoppinsRegular-B2Bw.otf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/PoppinsMedium-1JPv.otf);
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    background-color: variaveis.$corBackground;
+}
+
+@mixin text($fontsize: 14px){
+    font-family: Poppins, sans-serif;
+    font-size: $fontsize;
+    color: #fff;
+}
+
+@mixin title($fontsize:34px){
+    @include text($fontsize);
+
+}
+
+.text{
+    @include text;
+}
+
+.title{
+    @include title;
+}

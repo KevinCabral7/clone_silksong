@@ -6,7 +6,7 @@ const imagemin = require('gulp-imagemin');
 function compilaSass(){
     return gulp.src('./src/styles/*.scss')
     .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(gulp.dest('./dist/styles/main.css'));
+    .pipe(gulp.dest('./dist/styles/'));
 }
 
 function compilaJs(){

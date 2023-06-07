@@ -1,0 +1,19 @@
+.hero{
+    width: 1400px;
+    &__img{
+        position: absolute;
+        &--background{
+            width: 1384px;
+            height: 559px;
+            object-fit: cover;
+            top: 0;
+            }
+        &--on{
+            position: relative;    
+            overflow: hidden;      
+            margin: 0 auto;
+            top: 100px;
+            left: calc(741px/2);    
+            }
+    }
+}
