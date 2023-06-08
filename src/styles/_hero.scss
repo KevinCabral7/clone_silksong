@@ -1,5 +1,6 @@
 .hero{
     width: 1400px;
+    padding-bottom: 3vw;
     &__img{
         position: absolute;
         &--background{
@@ -7,8 +8,9 @@
             height: 559px;
             object-fit: cover;
             top: 0;
-            }
+        }
         &--on{
+            padding-bottom: 3vw;
             position: relative;    
             overflow: hidden;      
             margin: 0 auto;

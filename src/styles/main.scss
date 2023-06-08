@@ -1,6 +1,10 @@
 @use 'hero';
 @use 'variaveis';
 @use 'header';
+@use 'page-section';
+@use 'ytb';
+@use 'gallery';
+@use 'soundtrack';
 *{
     margin: 0;
     padding: 0;
@@ -10,18 +14,21 @@
 }
 
 @font-face {
-    font-family: Poppins;
+    font-family: PoppinsLight;
     src: url(/assets/fonts/PoppinsLight-l4Zw.otf);
+    font-weight: lighter;
 }
 
 @font-face{
     font-family: Poppins;
     src: url(/assets/fonts/PoppinsRegular-B2Bw.otf);
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: Poppins;
+    font-family: PoppinsMedium;
     src: url(/assets/fonts/PoppinsMedium-1JPv.otf);
+    font-weight: bold;
 }
 
 body{
@@ -30,14 +37,16 @@ body{
 }
 
 @mixin text($fontsize: 14px){
-    font-family: Poppins, sans-serif;
+    font-family: PoppinsLight, sans-serif;
     font-size: $fontsize;
     color: #fff;
+    line-height: 2em;
 }
 
 @mixin title($fontsize:34px){
-    @include text($fontsize);
-
+    font-family: PoppinsMedium, sans-serif;
+    color: #fff;
+    font-size: $fontsize;
 }
 
 .text{
@@ -46,4 +55,16 @@ body{
 
 .title{
     @include title;
+}
+
+.title--big{
+    @include title;
+    font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+}
+.button{
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+    padding: 16px 28px;
 }
