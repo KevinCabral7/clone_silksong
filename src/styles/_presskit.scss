@@ -1,0 +1,16 @@
+.presskit{
+    padding: 1vw 4vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__content{
+        width: 45%;
+        p{
+            padding-bottom: 8px;
+        }
+    }
+    // .carousel-control-next, .carousel-control-prev{
+    //     background-color: red;
+    // }
+}
