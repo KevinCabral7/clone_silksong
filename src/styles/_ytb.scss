@@ -1,14 +1,18 @@
 .ytb{
-    padding: 4vw;
-    max-width: 100%;
+    padding: 6vw;
+    width: 100%;
     height: 100%;
     iframe{
         background-image: url("https://i.ytimg.com/vi/pFAknD_9U7c/sddefault.jpg");
         -webkit-background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
+        width: 90vw;
+        height: 100vh;
         background-position: center;
+        @media (max-width: 768px) {
+            height: 30vh;
+            width: 90vw;
+        }
     }
     @media (max-width: 768px) {
         max-width: 100%;
