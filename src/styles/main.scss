@@ -17,7 +17,6 @@
     box-sizing: border-box;
     border: none;
     list-style: none;
-
 }
 
 @font-face {
@@ -71,7 +70,11 @@ body{
 
 .title{
     @include title;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
+
 
 .title--big{
     @include title;
@@ -84,4 +87,7 @@ body{
     background-color: #fff;
     padding: 16px 28px;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+        padding: 16px 16px;
+    }
 }

@@ -6,5 +6,10 @@
     img{
         background-size: cover;
         width: 416px;
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+        }
     }
 }

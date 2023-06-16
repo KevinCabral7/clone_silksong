@@ -4,8 +4,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    @media (max-width: 768px) {
+        display: block;
+        padding: 6vw;
+    }
     &__content{
         width: 45%;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
         p{
             padding-bottom: 8px;
         }
@@ -13,6 +20,10 @@
     &__image{
         img{
             width: 540px;
+            @media (max-width: 768px) {
+                display: block;
+                width: 100%;
+            }
         }
     }
 }

@@ -1,12 +1,23 @@
 .team_cherry{
     padding: 4vw;
     background-color: rgba(232,48,70,255);
+    @media (max-width: 768px) {
+        padding: 6vw;display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
     &__content{
         display: flex;
         align-items: center;
         flex-direction: column;
         margin: 0 auto;
         width: 80%;
+        @media (max-width: 768px) {
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
         p{
             text-align: center;
             width: 90%;
@@ -22,21 +33,36 @@
         margin-bottom: 16px;
     }
     &__icons{
+        @media (max-width: 768px) {
+            display: block;
+        }
         &__icon{
+            @media (max-width: 768px) {
+                width: 100%;
+            }
             padding: 0;
             &__content{
+                @media (max-width: 768px) {
+
+                    margin: 0 auto;
+                }
                 display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-                
                 p{
                     width: 80%;
                     margin-top: 16px;
                     margin-bottom: 16px;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
                 }
                 img{
                     max-width: 198px;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
                 }
             }
         }

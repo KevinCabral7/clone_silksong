@@ -5,18 +5,64 @@
     padding-bottom: 3vw;
     padding-left: 4vw;
     padding-right: 4vw;
-    z-index: 10;
+    z-index: 1;
     position: relative;
-    &__logo{
-        width: 71px;
+    @media (max-width: 768px) {
         position: absolute;
+    }
+    &__logo{
+        
+        width: 60px;
+        position: absolute;
+        @media (max-width: 768px) {
+            width: 40px;
+            top: 19px;
+        }
     }
     &__social{
         &__links{
             display: flex;
             &__item{
-                width: 60px;
-            }
+                @media (max-width: 768px) {
+                    display: none;
+                    visibility: hidden;
+                }
+                margin-left: 12px;
+                margin-right: 12px;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
+                }
         }
     }
+    .menu{
+        display: none;
+        color: #fff;
+        @media (max-width: 768px) {
+            cursor: pointer;
+            display: block;
+            left: 300px;
+            top: 5px;
+            font-size: 30px;
+            position: relative;
+        }
+    }
+}
+.modal{
+
+    .modal-dialog{
+    .modal-footer{
+    ul{ 
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        align-items: flex-end;
+        li{
+            display: flex;
+            visibility: visible;
+        }
+    }
+}
+}
 }

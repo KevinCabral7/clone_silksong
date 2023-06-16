@@ -1,22 +1,42 @@
 
 .page-section{
     padding: 4vw;
+    @media (max-width: 768px) {
+        padding: 6vw;
+        display: block;
+    }
     
     p{
         margin: 1em 0;
+        @media (max-width: 768px) {
+            margin: 2em 0;
+        }
     }
     h2{
         text-align: center;
         padding: 16px;
+        @media (max-width: 768px) {
+            
+        }
     }
     &__block{
         padding-top: 16px;
         padding-bottom: 16px;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 768px) {
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
 
         &__content{
             width: 45%;
+            @media (max-width: 768px) {
+                width: 100%;
+                padding-top: 32px;
+            }
         }
     }
 }

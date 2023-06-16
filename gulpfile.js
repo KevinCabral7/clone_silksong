@@ -10,9 +10,9 @@ function compilaSass(){
 }
 
 function compilaJs(){
-    return gulp.src('./src/scripts/*.js')
+    return gulp.src('./src/scripts/main.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/scripts/main.js'));
+    .pipe(gulp.dest('./dist/js'));
 }
 
 function compilaImagem(){

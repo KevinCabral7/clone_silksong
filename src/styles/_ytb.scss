@@ -2,4 +2,17 @@
     padding: 4vw;
     max-width: 100%;
     height: 100%;
+    iframe{
+        background-image: url("https://i.ytimg.com/vi/pFAknD_9U7c/sddefault.jpg");
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding: 3.3vmax;
+        display: block;
+    }
 }
