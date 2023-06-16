@@ -19,6 +19,13 @@
             
         }
     }
+    &__block:nth-child(3){
+        display: flex;
+        flex-direction: row-reverse;
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
     &__block{
         padding-top: 16px;
         padding-bottom: 16px;
